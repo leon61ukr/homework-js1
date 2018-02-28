@@ -15,18 +15,21 @@ document.write('diskr D = ' + d);
 document.write('<br>');
 
 if (d == 0) {
-    console.log('diskr d = 0');
-    document.write('There is no answer, because diskr D = 0');
-	document.write('<br>');
+	let x0=(-b/(2*a));
+	console.log('diskr d = 0');
+	document.write('x1,x2 = ' + x0);
+ //   console.log('diskr d < 0');
+ //   document.write('There is no answer, because diskr D < 0');
+	// document.write('<br>');
  } else {
     console.log('d>0 so ...');
 	let xOne=(-b+(Math.sqrt(d)))/(2*a);
 	let xTwo=(-b-(Math.sqrt(d)))/(2*a);
 	console.log(xOne);
-	document.write('Answer1 = ' + xOne);
+	document.write('x1 = ' + xOne);
 	document.write('<br>');
 	console.log(xTwo);
-	document.write('Answer2 = ' + xTwo);
+	document.write('x2 = ' + xTwo);
 	document.write('<br>');
 }
 
